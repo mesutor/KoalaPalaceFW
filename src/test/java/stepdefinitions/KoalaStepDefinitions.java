@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.KoalaPalacePage;
 import utilities.ConfigReader;
@@ -35,4 +36,11 @@ public class KoalaStepDefinitions {
     public void user_clicks_login_button() {
          koalaPalacePage.loginButton.click();
     }
+
+    @Then("Verify login welcome message")
+    public void verify_login_welcome_message() {
+
+    }
+
+
 }

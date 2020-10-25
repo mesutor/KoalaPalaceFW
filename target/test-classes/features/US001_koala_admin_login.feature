@@ -1,3 +1,4 @@
+@koala
 Feature: user should log in koalapalace home page
 
   Background: User is on the koalapalace page
@@ -9,3 +10,4 @@ Feature: user should log in koalapalace home page
     When user enters username
     When user enters password
     And user clicks login button
+    Then Verify login welcome message

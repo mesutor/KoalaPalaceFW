@@ -1,3 +1,4 @@
+@koala
 Feature: user should log in koalapalace home page
 
   Background: User is on the koalapalace page

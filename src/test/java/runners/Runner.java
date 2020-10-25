@@ -7,11 +7,17 @@ import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
+            plugin = {
+                    "html:target/default-reports",
+                    "json:target/json-reports/cucumber.json",
+                    "junit:target/json-reports/cucumber.xml"
+            },
+
             //Path of the features folder
             features = "src/test/resources/features",
             //Path of the stepdefinitionsfolder
             glue = "stepdefinitions",
-            tags = "@teapot",
+            tags = "@koala",
             dryRun = false)
 
     public class Runner {
